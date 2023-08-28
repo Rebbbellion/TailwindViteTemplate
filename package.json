@@ -8,7 +8,7 @@
       "build": "vite build",
       "preview": "vite preview",
       "sprite": " svgo --config ./svgo-cfg.cjs -f ./src/svgicons -o ./src/svgiconsmin && svg-symbol-sprite -i ./src/svgiconsmin -o ./public/img/icons/sprite.svg -c false",
-      "webp": "webpconvert public/img -r true && rm public/img/*/**.{png,jpg,jpeg} && for f in public/img/*/**.webp"
+      "webp": "webpconvert public/img -r true && rm public/img/*/**.{png,jpg,jpeg}"
    },
    "devDependencies": {
       "autoprefixer": "^10.4.15",
